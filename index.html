@@ -10,7 +10,7 @@
   		<div class="main-header-logo"><img src="#" width="1" height="1" alt="Логотип Седона"></div>
   		<nav class="main-nav">
   			<ul class="site-nav">
-  				<li><a class="main-active" href="#">Информация</a></li>
+  				<li class="main-active" href="#">Информация</li>
   				<li><a href="#">Фото и видео</a></li>
   				<li><a href="#">Карта штата</a></li>
   				<li><a href="catalog.html">Гостиницы</a></li>
@@ -19,7 +19,10 @@
   	</header>
 
   	<main>
-  		<!--Не придумал (ноль идей) как разметить вот это большое фоновое изображение с надписями-->
+  		<div class="main-img">
+  			<img src="#" width="1" height="1" alt="Главный фон">
+  		</div>
+
   		<h1 class="visually-hidden">Sedona</h1>
 
   		<section class="main-description">
@@ -27,16 +30,16 @@
   			<p class="info-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   		</section>
 
-  		<article class="advantage">
-  			<section class="first-advantage">
+  		<section class="advantages">
+  			<div class="advantages-city-canyon">
   			<h2>Настоящий городок</h2>
   				<p class="subtitle">№1</p>
   				<p class="description-advantage">Седона не атракцион для туристов, там течёт своя жизнь</p>
-  			</section>
-  			<aside class="city">
-  				<img src="#" width="" height="" alt="Настоящий Городок">
-  			</aside>
-  		</article>
+  			</div>
+  			<figure class="city">
+  				<img src="#" width="1" height="1" alt="Настоящий Городок">
+  			</figure>
+  		</section>
 
   		<section class="service">
   			<ul class="service-list">
@@ -55,33 +58,33 @@
   			</ul>
   		</section>
 
-  		<article class="advantage">
-  			<aside class="canyon">
+  		<section class="advantages">
+  			<figure class="canyon">
   				<img src="#" width="1" height="1" alt="Каньон">
-  			</aside>
-  			<section class="second-advantage">
+  			</figure>
+  			<div class="advantages-city-canyon">
   				<h2>Там есть мост дьявола</h2>
-  				<p class="number">№2</p>
+  				<p class="subtitle">№2</p>
   				<p class="description-advantage">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  			</section>
-  		</aeticle>
+  			</div>
+  		</section>
 
   		<section class="third-four-five advantage">
   			<ul class="list-advantage">
   				<li class="advantage-variety">
   					<h2>Небольшая площадь</h2>
   					<p class="subtitle">№3</p>
-  					<p class="about-advantage">Все достопримечательности находятся очень близко</p>
+  					<p class="description-advantage">Все достопримечательности находятся очень близко</p>
   				</li>
   				<li class="advantage-variety">
   					<h2>Красивая дорога</h2>
   					<p class="subtitle">№4</p>
-  					<p class="about-advantage">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+  					<p class="description-advantage">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
   				</li>
   				<li class="advantage-variety">
   					<h2>Мало туристов</h2>
   					<p class="subtitle">№5</p>
-  					<p class="about-advantage">Большинство едет в Гранд Каньон и толпится там</p>
+  					<p class="description-advantage">Большинство едет в Гранд Каньон и толпится там</p>
   				</li>
   			</ul>
   		</section>
@@ -96,21 +99,22 @@
   		<section class="map">
   			<!--Не знаю как обозначить карту-->
   		</section>
-
-  		<footer class="main-footer">
-  			<section class="footer-social">
-  				<b>#VISITSEDONA</b>
-  				<ul>
-  					<li><a class="social-button" href="#">Твиттер</a></li>
-  					<li><a class="social-button" href="#">Фейсбук</a></li>
-  					<li><a class="social-button" href="#">Youtube</a></li>
-  				</ul>
-  			</section>
-  			<p class="main-footer-copyright">
-  				<span>WEBSITE BY</span>
-  				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTML Academy"></a>
-  			</p>
-  		</footer>
   	</main>
+
+  	<footer class="main-footer">
+  		<a href="#">#VISITSEDONA</a>
+  		<section class="social-footer">
+  			<!--Здесь не понял, что не так по поводу доп. класса для ссылок-->
+  			<ul class="social-list">
+  				<li><a class="social-btn" href="#">Твиттер</a></li>
+  				<li><a class="social-btn" href="#">Фейсбук</a></li>
+  				<li><a class="socila-btn" href="#">Youtube</a></li>
+  			</ul>
+  		</section>
+  		<p class="copyright">
+  			<b>website by</b>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="1" height="1" alt="HTML academy"></a>
+  		</p>
+  	</footer>
   </body>
 </html>

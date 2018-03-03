@@ -1,18 +1,18 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Отели</title>
 </head>
 <body>
-
   	<header class="main-header">
-  		<div class="main-header-logo"><img src="#" width="1" height="1" alt="Логотип Седона"></div>
   		<nav class="main-nav">
+  			<a class="main-header-logo" href="index.html"><img src="#" width="1" height="1" alt="Логотип Седона"></a>
   			<ul class="site-nav">
   				<li><a class="index.html" href="#">Информация</a></li>
   				<li><a href="#">Фото и видео</a></li>
   				<li><a href="#">Карта штата</a></li>
-  				<li><a class="main-active" href="#">Гостиницы</a></li>
+  				<li class="main-active">Гостиницы</li>
   			</ul>
   		</nav>
   	</header>
@@ -21,80 +21,93 @@
   		<section class="filters">
   		<!--Здесь будет БОЛЬШАЯ ФОРМА-->
   		</section>
-  		<span>Найдено 3:</span>
 
   		<section class="options">
+  			<h2>Найдено 3:</h2>
   			<p>Сортировка:</p>
   			<ul class="options-list">
   				<li><a class="options-type" href="#">По цене</a></li>
   				<li><a class="options-type" href="#">По типу</a></li>
   				<li><a class="options-type" href="#">По рейтингу</a></li>
   			</ul>
-  			<span class="button button-up"></span>
-  			<span class="button button-down"></span>
+  			<a class="button button-up" href="#"></a>
+  			<a class="button button-down" href="#"></a>
   		</section>
 
   		<section class="hotels">
   			<ul class="hotels-list">
   				<li class="hotels-type">
-  					<h3>Amara resort & Spa</h3>
-  					<p><img src="#" width="1" height="1" alt="Amara resort & Spa"></p>
-  					<b>Гостиница</b>
-  					<b>От 4000 р.</b>
-  					<p class="button-hotels">
-  						<a class="button button-info" href="#">Подробнее</a>
-  						<a class="button button-buy" href="#">Купить</a>
-  					</p>
-  					<span class="star">
-  						<!--Звездочки не знаю как-->
-  					</span>
-  					<span class="">Рейтинг: 8,5</span>
+  					<figure class="hotels-img">
+  						<img src="#" width="1" height="1" alt="Amara resort & Spa">
+  					</figure>
+  					<a class="hotels-title" href='#'>Amara resort & Spa</a>
+  					<div class="hotels-about">
+  						<p class="hotels-result">Гостиница</p>
+  						<a class="hotels-about-more" href="#">Подробнее</a>
+  					</div>
+  					<div class="price-book">
+  						<p class="hotels-price">От 4000 р.</p>
+  						<a class="hotels-book" href="">Забронировать</a>
+  					</div>
+  					<div class="rating-low">
+  						<div class="stars-4"></div>
+  						<div class="rating">Рейтинг: 8,5</div>
+  					</div>
   				</li>
   				<li class="hotels-type">
-  					<h3>Desert Quail Inn</h3>
-  					<p><img src="#" width="1" height="1" alt="Desert Quail Inn"></p>
-  					<b>Мотель</b>
-  					<b>От 3000 р.</b>
-  					<p class="button-hotels">
-  						<a class="button button-info" href="#">Подробнее</a>
-  						<a class="button button-buy" href="#">Купить</a>
-  					</p>
-  					<span class="star">
-  						<!--Звездочки не знаю как-->
-  					</span>
-  					<span class="">Рейтинг: 8,9</span>
+  					<figure class="hotels-img">
+  						<img src="#" width="1" height="1" alt="Desert Quail Inn">
+  					</figure>
+  					<a class="hotels-title" href="#">Desert Quail Inn</a>
+  					<div class="hotels-about">
+  						<p class="hotels-result">Мотель</p>
+  						<a class="hotels-about-more" href="#">Подробнее</a>
+  					</div>
+  					<div class="price-book">
+  						<p class="hotels-price">От 3000 р.</p>
+  						<a class="hotels-book" href="">Забронировать</a>
+  					</div>
+  					<div class="rating-middle">
+  						<div class="stars-3"></div>
+  						<div class="rating">Рейтинг: 8,9</div>
+  					</div>
   				</li>
   				<li class="hotels-type">
-  					<h3>Villas At Poco Diablo</h3>
-  					<p><img src="#" width="1" height="1" alt="Villas At Poco Diablo"></p>
-  					<b>Апартаменты</b>
-  					<b>От 2000 р.</b>
-  					<p class="button-hotels">
-  						<a class="button button-info" href="#">Подробнее</a>
-  						<a class="button button-buy" href="#">Купить</a>
-  					</p>
-  					<span class="star">
-  						<!--Звездочки не знаю как-->
-  					</span>
-  					<span class="">Рейтинг: 9,2</span>	
+  					<figure class="hotels-img">
+  						<img src="#" width="1" height="1" alt="Villas At Poco Diablo">
+  					</figure>
+  					<a class="hotels-title" href="#">Villas At Poco Diablo</a>
+  					<div class="hotels-about">
+  						<p class="hotels-result">Апартаменты</p>
+  						<a class="hotels-about-more" href="#">Подробнее</a>
+  					</div>
+  					<div class="price-book">
+  						<p class="hotels-price">От 2000 р.</p>
+  						<a class="hotels-book" href="">Забронировать</a>
+  					</div>
+  					<div class="rating-high">
+  						<div class="stars-2"></div>
+  						<div class="rating">Рейтинг: 9,2</div>
+  					</div>
   				</li>	
   			</ul>		
   		</section>
-
-  		<footer class="main-footer">
-  			<section class="footer-social">
-  				<b>#VISITSEDONA</b>
-  				<ul>
-  					<li><a class="social-button" href="#">Твиттер</a></li>
-  					<li><a class="social-button" href="#">Фейсбук</a></li>
-  					<li><a class="social-button" href="#">Youtube</a></li>
-  				</ul>
-  			</section>
-  			<p class="main-footer-copyright">
-  				<span>WEBSITE BY</span>
-  				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTML Academy"></a>
-  			</p>
-  		</footer>
   	</main>
+
+  	<footer class="main-footer">
+  		<a href="#">#VISITSEDONA</a>
+  		<section class="social-footer">
+  			<!--Здесь не понял, что не так по поводу доп. класса для ссылок-->
+  			<ul class="social-list">
+  				<li><a class="social-btn" href="#">Твиттер</a></li>
+  				<li><a class="social-btn" href="#">Фейсбук</a></li>
+  				<li><a class="socila-btn" href="#">Youtube</a></li>
+  			</ul>
+  		</section>
+  		<p class="copyright">
+  			<b>website by</b>
+  			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="1" height="1" alt="HTML academy"></a>
+  		</p>
+  	</footer>
 </body>
 </html>
