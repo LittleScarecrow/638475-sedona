@@ -1,4 +1,356 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+p {
+	color: #333333;
+}
+
+.main-nav {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	background-color: #ffffff;
+}
+
+.site-nav,
+.service-list,
+.list-advantages,
+.social-list,
+.infrastructure-list,
+.house-list,
+.options-list,
+.hotels-list {
+	list-style: none;
+}
+
+.site-nav a {
+	color: #000000;
+}
+
+.site-nav a:hover {
+	color: #81b3d2;
+}
+
+.site-nav a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*не могу понять как сделать ссылку готиницы на второй странице коричневого цвета(все перебрал)*/
+.site-nav a.main-active:visited {
+	color: red;
+}
+
+.main-img {
+	width: 1200px;
+	height: 800px;
+	background-color: #000000;
+	background-image: url("../img/background-photo.jpg");
+}
+
+.main-description h2 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.main-description p {
+	font-size: 14px;
+	line-height: 26px;
+	text-align: center;
+}
+.advantages-city-canyon {
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-align: center;
+}
+
+.advantages-city-canyon p {
+	color:#ffffff;
+}
+
+.service-item {
+	text-align: center;
+}
+
+.list-advantages {
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.hotel-search {
+	text-align: center;
+}
+
+.hotel-search h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.hotel-search p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.hotel-search a {
+	font-size: 21px;
+	line-height: 26px;
+	background-color: #766357;
+	color: #ffffff;
+}
+
+.hotel-search a:hover {
+	background-color: #604e43;
+}
+
+.hotel-search a:active {
+	background-color: #503e33;
+}
+
+.form-search {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.form-search input {
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+}
+
+.form-search input:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.form-search input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.form-search .button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.form-search .button:hover {
+	background-color: #669ec0;
+}
+
+.form-search .button:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.social-list {
+	text-align: center;
+}
+
+.copyright {
+	text-align: right;
+}
+
+.copyright p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.filters {
+	background-color: #000000;
+	width: 1200px;
+	height: 800px;
+	background-image: url("../img/background-photo.jpg");
+	background-repeat: no-repeat;
+	color: #ffffff;
+
+}
+
+.filters legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.filters .filter-option {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.form-price .min-max {
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.min-max input {
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+	color:#ffffff;
+
+}
+
+.form-price p {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+
+}
+
+.button-filter {
+	background-color: transparent;
+	text-transform: uppercase;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 26px;
+	color:#ffffff;
+}
+
+.button-filter:hover {
+	background-color: #ffffff;
+	color:#000000;
+}
+
+.options h2 {
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+}
+
+.options p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.options-list a {
+	font-size: 12px;
+	line-height: 18px;
+	border-bottom: 1px dashed #81b3d2;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.options-list a:hover {
+	color: #81b3d2;
+}
+
+.options-list a:active {
+	border: none;
+	color: #000000;
+}
+
+/*Как сделать активный вариант ссылки, типа мы сйечас на ней находимся???*/
+
+.hotels-type a.hotels-title {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.hotels-type a.hotels-title:hover {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #81b3d2;
+}
+
+.hotels-type a.hotels-title:active {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-about-more {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #81b3d2;
+	color:#ffffff;
+}
+
+a.hotels-about-more:hover {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #669ec0;
+	color:#ffffff;
+}
+
+a.hotels-about-more:active {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #5496bd;
+	color: rgba(255, 255,255, 0.3);
+}
+
+a.hotels-book {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #766357;
+	color:#ffffff;
+}
+
+a.hotels-book:hover{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #604e43;
+	color:#ffffff;
+}
+
+a.hotels-book:active{
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	background-color: #503e33;
+	color: rgba(255, 255,255, 0.3);
+}
+
+.rating {
+	font-size: 14px;
+	line-height: 21px;
+	background-color: #f2f2f2;
+}
+
+.hotels-type {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
 }

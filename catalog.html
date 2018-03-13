@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="catalog">
 	<header class="main-header">
 		<nav class="main-nav">
 			<a class="main-header-logo" href="index.html"><img src="img/main-logo.png" width="138" height="70" alt="Логотип Седона"></a>
@@ -54,10 +54,12 @@
 				</fieldset>
 					<div class="form-price">
 						<p>Стоимость в сутки (р):</p>
-						<label class="visually-hidden" for="min-price">Минимальная стоимость</label>
-						<input type="text" name="min-price" id="min-price" value="От 0">
-						<label class="visually-hidden" for="max-price">Максимальная стоимость</label>
-						<input type="text" name="max-price" id="max-price" value="До 3000"><br>
+						<div class="min-max">
+							<label class="visually-hidden" for="min-price">Минимальная стоимость</label>
+							<input type="text" name="min-price" id="min-price" value="От 0">
+							<label class="visually-hidden" for="max-price">Максимальная стоимость</label>
+							<input type="text" name="max-price" id="max-price" value="До 3000"><br>
+						</div>
 						<label class="visually-hidden" for="slider-price">Выбор стоимости</label>
 						<input type="range" name="slider-price" id="slider-price" min="0" max="3000" step="1">
 					</div>
@@ -78,7 +80,7 @@
 		</section>
 
 		<section class="hotels">
-			<h2 class="visually-hidden">Отели</h2>
+			<h2 class="visually-hidden">Список отелей</h2>
 			<ul class="hotels-list">
 				<li class="hotels-type">
 					<figure class="hotels-img">
