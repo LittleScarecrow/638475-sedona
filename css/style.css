@@ -13,16 +13,6 @@ a {
 	text-decoration: none;
 }
 
-h2 {
-	font-size: 21px;
-	line-height: 21px;
-	font-weight: 700;
-}
-
-p {
-	color: #333333;
-}
-
 .main-nav {
 	font-size: 14px;
 	line-height: 26px;
@@ -53,9 +43,8 @@ p {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-/*не могу понять как сделать ссылку готиницы на второй странице коричневого цвета(все перебрал)*/
-.site-nav a.main-active:visited {
-	color: red;
+.site-nav a.main-active {
+	color: #766357;
 }
 
 .main-img {
@@ -75,12 +64,21 @@ p {
 .main-description p {
 	font-size: 14px;
 	line-height: 26px;
+	color: #333333;
 	text-align: center;
 }
+
 .advantages-city-canyon {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
+}
+
+.advantages-city-canyon h2 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
 }
 
 .advantages-city-canyon p {
@@ -91,9 +89,26 @@ p {
 	text-align: center;
 }
 
+.service-item h2 {
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.service-item p {
+	color: #333333;
+}
+
 .list-advantages {
 	text-align: center;
 	background-color: #eeeeee;
+}
+
+.list-advantages h2 {
+	font-size: 21px;
+}
+
+.list-advantages p {
+	color: #333333;
 }
 
 .hotel-search {
@@ -246,9 +261,9 @@ p {
 }
 
 .options h2 {
-font-size: 21px;
-line-height: 26px;
-font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
 }
 
 .options p {
@@ -264,6 +279,11 @@ font-weight: 700;
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.options-list a.active {
+	border: none;
+	color:#81b3d2;
+}
+
 .options-list a:hover {
 	color: #81b3d2;
 }
@@ -272,8 +292,6 @@ font-weight: 700;
 	border: none;
 	color: #000000;
 }
-
-/*Как сделать активный вариант ссылки, типа мы сйечас на ней находимся???*/
 
 .hotels-type a.hotels-title {
 	font-size: 21px;
