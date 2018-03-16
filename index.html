@@ -22,9 +22,9 @@
   	</header>
 
   	<main>
-  		<h1 class="visually-hidden">Sedona</h1>
+  		<!--<h1 class="visually-hidden">Sedona</h1>-->
   		<div class="main-img">
-  			<!--<img src="img/background-photo.jpg" width="1200" height="773" alt="Главный фон">-->
+  			<div class="bg"></div>
   		</div>
 
   		<section class="main-description">
@@ -33,19 +33,19 @@
   		</section>
 
   		<section class="main-advantages">
-  			<h2 class="visually-hidden">Преимущество</h2>
+  			<!--<h2 class="visually-hidden">Преимущество</h2>-->
   			<div class="advantages-city-canyon">
   			<h2>Настоящий городок</h2>
   				<p class="subtitle">- №1 -</p>
   				<p class="description-advantage">Седона-не аттракцион для туристов, там течет своя жизнь</p>
   			</div>
   			<figure class="city">
-  				<img src="img/city.jpg" width="800" height="400" alt="Настоящий Городок">
+  				<img src="img/city-1.jpg" width="800" height="256" alt="Настоящий Городок">
   			</figure>
   		</section>
 
   		<section class="service">
-  			<h2 class="visually-hidden">Услуги</h2>
+  			<!--<h2 class="visually-hidden">Услуги</h2>-->
   			<ul class="service-list">
   				<li class="service-item">
   					<h2>Жилье</h2>
@@ -63,9 +63,9 @@
   		</section>
 
   		<section class="main-advantages">
-  			<h2 class="visually-hidden">Преимущество</h2>
+  			<!--<h2 class="visually-hidden">Преимущество</h2>-->
   			<figure class="canyon">
-  				<img src="img/canyon.jpg" width="800" height="400" alt="Каньон">
+  				<img src="img/canyon-1.jpg" width="800" height="256" alt="Каньон">
   			</figure>
   			<div class="advantages-city-canyon">
   				<h2>Там есть мост дьявола</h2>
@@ -75,7 +75,7 @@
   		</section>
 
   		<section class="other-advantages">
-  			<h2 class="visually-hidden">Другие преимущества</h2>
+  			<!--<h2 class="visually-hidden">Другие преимущества</h2>-->
   			<ul class="list-advantages">
   				<li class="advantage-variety">
   					<h2>Небольшая площадь</h2>
@@ -102,43 +102,18 @@
   		</section>
 
   		<section class="map">
-  			<h2 class="visually-hidden">Наше местоположение</h2>
+  			<!--<h2 class="visually-hidden">Наше местоположение</h2>-->
   			<figure class="map-image">
   				<img src="img/map.jpg" width="1200" height="593" alt="местоположение Седоны (адрес)">
   			</figure>
   			<!--JS?-->
   		</section>
 
-  		<form class="form-search" action="#" method="post">
-  				<h2 class="visually-hidden">Поиск отеля</h2>
-	  			<div class="arrival-departure">
-	  				<label for="field-date-arrival">Дата заезда:</label>
-	  				<input class="date" type="date" name="date-arrival" id="field-date-arrival" autofocus>
-	  			</div>
-	  			<div class="arrival-departure">
-	  				<label for="field-date-departure">Дата выезда:</label>	
-	  				<input class="date" type="date" name="date-departure" id="field-date-departure">
-	  			</div>
-	  			<div class="adults-children">
-	  				<label for="adults">Взрослые:</label>
-	  				<button class="button-minus" type="button">Минус</button>
-	  				<input type="text" name="adults" id="adults">
-	  				<button class="button-plus" type="button">Плюс</button>
-	  			</div>
-	  			<div class="adults-children">
-	  				<label for="children">Дети:</label>
-	  				<button class="button-minus" type="button">Минус</button>
-	  				<input type="text" name="children" id="children">
-	  				<button class="button-plus" type="button">Плюс</button>
-	  			</div>
-  			<button class="button" type="submit">Найти</button>
-  		</form>
-  	</main>
 
   	<footer class="main-footer">
   		<a href="#">#VISITSEDONA</a>
   		<section class="social-footer">
-  			<h2 class="visually-hidden">Обратная связь</h2>
+  			<!--<h2 class="visually-hidden">Обратная связь</h2>-->
   			<ul class="social-list">
   				<li><a class="social-btn twitter-btn" href="#">Твиттер</a></li>
   				<li><a class="social-btn facebook-btn" href="#">Фейсбук</a></li>
@@ -150,5 +125,30 @@
   			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_name.png" width="115" height="41" alt="HTML academy"></a>
   		</p>
   	</footer>
+
+    <form class="form-search" action="#" method="post">
+       <h2 class="visually-hidden">Поиск отеля</h2>
+       <div class="arrival-departure">
+          <label for="field-date-arrival">Дата заезда:</label>
+          <input class="date" type="date" name="date-arrival" id="field-date-arrival" autofocus>
+       </div>
+       <div class="arrival-departure">
+            <label for="field-date-departure">Дата выезда:</label>  
+            <input class="date" type="date" name="date-departure" id="field-date-departure">
+          </div>
+          <div class="adults-children">
+            <label for="adults">Взрослые:</label>
+            <button class="button-minus" type="button">Минус</button>
+            <input type="text" name="adults" id="adults">
+            <button class="button-plus" type="button">Плюс</button>
+          </div>
+          <div class="adults-children">
+            <label for="children">Дети:</label>
+            <button class="button-minus" type="button">Минус</button>
+            <input type="text" name="children" id="children">
+            <button class="button-plus" type="button">Плюс</button>
+          </div>
+        <button class="button" type="submit">Найти</button>
+      </form>
   </body>
 </html>
