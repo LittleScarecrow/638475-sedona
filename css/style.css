@@ -14,16 +14,6 @@ a {
 	text-decoration: none;
 }
 
-.main-header {
-}
-
-.main-nav {
-	display: flex;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
-}
-
 .site-nav,
 .service-list,
 .list-advantages,
@@ -35,9 +25,44 @@ a {
 	list-style: none;
 }
 
+.main-nav {
+	position: relative;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.main-header-logo {
+	position: absolute;
+	left: 531px;
+}
+
 .site-nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	width: 300px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+ul.site-nav li:nth-of-type(1) {
+	box-sizing: border-box;
+	padding-left: 72px;
+}
+
+ul.site-nav li:nth-of-type(3) {
+	text-align: right;
+}
+
+ul.site-nav li:nth-of-type(4) {
+	box-sizing: border-box;
+	text-align: right;
+	padding-right: 72px;
 }
 
 .site-nav a {
@@ -100,36 +125,34 @@ a {
 }
 
 .advantages-city-canyon {
+
 	width: 400px;
+	padding-top: 50px;
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
 }
 
 .advantages-city-canyon h2 {
-	padding: 0 139px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 24px;
-	margin-top: 47px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
-	color: #ffffff;
+	margin: 0;
+	padding-left: 138px;
+	padding-right: 138px;
+	padding-bottom: 24px;
 }
 
 .advantages-city-canyon .subtitle {
-	width: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 27px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 26px;
 }
 
 .advantages-city-canyon .description-advantage {
-	width: 282px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 62px;
+	margin: 0;
+	padding-left: 59px;
+	padding-right: 59px;
 	color:#ffffff;
 }
 
@@ -310,7 +333,6 @@ a {
 	justify-content: space-around;
 	align-items: center;
 }
-
 .main-footer a {
 	font-size: 21px;
 	line-height: 26px;
@@ -325,7 +347,6 @@ a {
 }
 
 .filters {
-	display: flex;
 	background-color: #000000;
 	width: 1200px;
 	height: 217px;
@@ -334,13 +355,38 @@ a {
 	color: #ffffff;
 }
 
+.filter {
+	display: flex;
+}
+
+.infrastructure-house {
+	width: 236px;
+	margin: 0;
+	padding: 0;
+	padding-left: 71px;
+	border: none;
+}
+
+.infrastructure-list {
+	margin: 0;
+	padding: 0;
+}
+
+.house-list {
+	margin: 0;
+	padding: 0;
+}
+
 .filters legend {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
 }
 
 .filters .filter-option {
+	padding-bottom: 30px;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -368,6 +414,7 @@ a {
 }
 
 .button-filter {
+	align-self: flex-end;
 	background-color: transparent;
 	text-transform: uppercase;
 	border: 2px solid #ffffff;
@@ -426,12 +473,42 @@ a {
 	color: #000000;
 }
 
-.hotels-type {
+.hotels-list {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 
-figure.hotels-img {
+.hotels-list li {
+	display: flex; 
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 72px;
+	padding-right: 72px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.hotels-list li img {
+	margin-right: 30px;
+}
+
+.name-and-price {
+	margin: 0;
+	margin-bottom: 13px;
+}
+
+.description-booking .name {
+	display: inline-block;
+	width: 110px;
+}
+
+.description-booking .price {
+	display: inline-block;
+	width: 143px;
+}
+
+.about-more-book {
 	margin: 0;
 }
 
@@ -439,12 +516,15 @@ figure.hotels-img {
 .rating-middle,
 .rating-high {
 	align-self: center;
+	margin-left: auto;
 }
 
 .hotels-type a.hotels-title {
+	display: inline-block;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+	margin-bottom: 6px;
 	color: #000000;
 }
 
@@ -466,6 +546,10 @@ figure.hotels-img {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	padding-left: 16px;
+	padding-right: 16px;
 	background-color: #81b3d2;
 	color:#ffffff;
 }
@@ -486,10 +570,14 @@ a.hotels-about-more:active {
 	color: rgba(255, 255,255, 0.3);
 }
 
-a.hotels-book {
+.hotels-book {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	padding-left: 16px;
+	padding-right: 16px;
 	background-color: #766357;
 	color:#ffffff;
 }
@@ -514,9 +602,4 @@ a.hotels-book:active{
 	font-size: 14px;
 	line-height: 21px;
 	background-color: #f2f2f2;
-}
-
-.hotels-type {
-	border-top: 1px solid #e5e5e5;
-	border-bottom: 1px solid #e5e5e5;
 }
