@@ -22,7 +22,7 @@
 
 	<main>
 		<section class="filters">
-			<!--<h2 class="visually-hidden">Инфраструктура, тип жилья и стоимость</h2>-->
+			<h2 class="visually-hidden">Инфраструктура, тип жилья и стоимость</h2>
 			<form class="filter" action="#" method="get">
 				<fieldset class="infrastructure-house">
 					<legend class="title-form">Инфраструктура:</legend>
@@ -55,15 +55,15 @@
 					<div class="form-price">
 						<p>Стоимость в сутки (р):</p>
 						<div class="min-max">
-							<!--<label class="visually-hidden" for="min-price">Минимальная стоимость</label>-->
+							<label class="visually-hidden" for="min-price">Минимальная стоимость</label>
 							<input type="text" name="min-price" id="min-price" value="От 0">
-							<!--<label class="visually-hidden" for="max-price">Максимальная стоимость</label>-->
+							<label class="visually-hidden" for="max-price">Максимальная стоимость</label>
 							<input type="text" name="max-price" id="max-price" value="До 3000"><br>
 						</div>
-						<!--<label class="visually-hidden" for="slider-price">Выбор стоимости</label>-->
-						<input type="range" name="slider-price" id="slider-price" min="0" max="3000" step="1">
+						<label class="visually-hidden" for="slider-price">Выбор стоимости</label>
+						<input type="range" name="slider-price" id="slider-price" min="0" max="3000" step="1"><br>
+						<button class="button-filter" type="submit">Показать</button>
 					</div>
-					<button class="button-filter" type="submit">Показать</button>
 			</form>
 		</section>
 
@@ -80,7 +80,7 @@
 		</section>
 
 		<section class="hotels">
-			<!--<h2 class="visually-hidden">Список отелей</h2>-->
+			<h2 class="visually-hidden">Список отелей</h2>
 			<ul class="hotels-list">
 				<li class="hotels-type">
 					<img src="img/amara.jpg" width="135" height="90" alt="Amara resort & Spa">

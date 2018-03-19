@@ -25,6 +25,10 @@ a {
 	list-style: none;
 }
 
+.visually-hidden {
+	display: none;
+}
+
 .main-nav {
 	position: relative;
 	font-size: 14px;
@@ -81,12 +85,12 @@ ul.site-nav li:nth-of-type(4) {
 	color: #766357;
 }
 
-.bg{
+.main-img{
 	width: 1200px;
 	height: 508px;
 	background-color: #000000;
 	background: url("../img/welcome.png") no-repeat 50% 76px,
-				url("../img/background-photo-1.jpg") no-repeat;
+				url("../img/background-photo-1.jpg") no-repeat;		
 }
 
 .main-description {
@@ -121,7 +125,6 @@ ul.site-nav li:nth-of-type(4) {
 .main-advantages {
 	display: flex;
 	width: 100%;
-	height: 256px;
 }
 
 .advantages-city-canyon {
@@ -157,6 +160,7 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .city {
+	line-height: 0;
 	margin: 0;
 	padding: 0;
 }
@@ -207,6 +211,7 @@ ul.site-nav li:nth-of-type(4) {
 .canyon {
 	margin: 0;
 	padding: 0;
+	line-height: 0;
 }
 
 .main-advantages:nth-of-type(2)  h2:first-od-type {
@@ -359,6 +364,11 @@ ul.site-nav li:nth-of-type(4) {
 	display: flex;
 }
 
+.form-price{
+	margin-left: auto;
+	padding-right: 60px;
+}
+
 .infrastructure-house {
 	width: 236px;
 	margin: 0;
@@ -389,6 +399,15 @@ ul.site-nav li:nth-of-type(4) {
 	padding-bottom: 30px;
 	font-size: 14px;
 	line-height: 21px;
+}
+
+.form-price p{
+	margin-bottom: 0;
+}
+
+.button-filter {
+	margin-top: 20px;
+	margin-left: 120px;
 }
 
 .form-price .min-max {
