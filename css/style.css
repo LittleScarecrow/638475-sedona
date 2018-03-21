@@ -1,4 +1,5 @@
 body {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0;
@@ -29,6 +30,10 @@ a {
 	display: none;
 }
 
+.button {
+	border: none;
+}
+
 .main-nav {
 	position: relative;
 	font-size: 14px;
@@ -50,17 +55,23 @@ a {
 
 .site-nav li {
 	width: 300px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 14px;
+	padding-bottom: 16px;
 }
 
 ul.site-nav li:nth-of-type(1) {
 	box-sizing: border-box;
 	padding-left: 72px;
 }
+ul.site-nav li:nth-of-type(2) {
+	box-sizing: border-box;
+	padding-left: 13px;
+}
 
 ul.site-nav li:nth-of-type(3) {
+	box-sizing: border-box;
 	text-align: right;
+	padding-right: 17px;
 }
 
 ul.site-nav li:nth-of-type(4) {
@@ -90,30 +101,32 @@ ul.site-nav li:nth-of-type(4) {
 	height: 508px;
 	background-color: #000000;
 	background: url("../img/welcome.png") no-repeat 50% 76px,
+				url("../img/white-background.png") no-repeat 0 100%,
 				url("../img/background-photo-1.jpg") no-repeat;		
 }
 
 .main-description {
-	padding-top: 62px;
-	padding-bottom: 55px;
+	padding-top: 60px;
+	padding-bottom: 50px;
 }
 
 .main-description h2 {
 	background-color: white;
-	width: 440px;
-	margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 33px;
+	width: 450px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-bottom: 28px;
     text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	text-align: center;
 }
 
 .main-description p {
 	background-color: white;
 	width: 491px;
+	margin: 0;
+	padding: 0;
 	margin-right: auto;
     margin-left: auto;
 	font-size: 14px;
@@ -130,32 +143,34 @@ ul.site-nav li:nth-of-type(4) {
 .advantages-city-canyon {
 
 	width: 400px;
-	padding-top: 50px;
+	padding-top: 48px;
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
 }
 
 .advantages-city-canyon h2 {
+	width: 152px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	margin: 0;
-	padding-left: 138px;
-	padding-right: 138px;
-	padding-bottom: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 22px;
 }
 
 .advantages-city-canyon .subtitle {
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-bottom: 26px;
+	padding-bottom: 21px;
 }
 
 .advantages-city-canyon .description-advantage {
+	width: 304px;
 	margin: 0;
-	padding-left: 59px;
-	padding-right: 59px;
+	margin-left: auto;
+	margin-right: auto;
 	color:#ffffff;
 }
 
@@ -166,8 +181,8 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .service {
-	margin-top: 163px;
-	margin-bottom: 85px;
+	margin-top: 161px;
+	margin-bottom: 81px;
 }
 
 .service-list {
@@ -180,8 +195,42 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .service-item {
+	position: relative;
 	width: 400px;
 	text-align: center;
+}
+
+.service-item:first-of-type::before{
+	position: absolute;
+	content: "";
+	width: 75px;
+	height: 72px;
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+	bottom: 117px;
+	right: 162px;
+}
+
+.service-item:nth-of-type(2)::before{
+	position: absolute;
+	content: "";
+	width: 74px;
+	height: 70px;
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
+	bottom: 118px;
+	right: 165px;
+}
+
+.service-item:nth-of-type(3)::before{
+	position: absolute;
+	content: "";
+	width: 64px;
+	height: 76px;
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+	bottom: 117px;
+	right: 169px;
 }
 
 .service-list li:first-of-type p:first-of-type {
@@ -189,7 +238,7 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .service-list li:nth-of-type(2) p {
-	padding: 0 58px;
+	padding: 0 50px;
 }
 
 .service-list li:nth-of-type(3) p {
@@ -221,10 +270,9 @@ ul.site-nav li:nth-of-type(4) {
 .list-advantages {
 	display: flex;
 	justify-content: space-around;
-	width: 100%;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 53px;
+	margin-bottom: 50px;
 	padding-top: 47px;
 	text-align: center;
 	background-color: #eeeeee;
@@ -237,6 +285,9 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .list-advantages h2 {
+	width: 119px;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 25px;
 	font-size: 21px;
 }
@@ -246,11 +297,12 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .list-advantages .subtitle {
-	margin-bottom: 27px;
+	margin-bottom: 20px;
 }
 
 .list-advantages .description-advantage {
-	padding-bottom: 62px;
+	width: 264px;
+	padding-bottom: 59px;
 }
 
 .hotel-search {
@@ -259,7 +311,7 @@ ul.site-nav li:nth-of-type(4) {
 
 .hotel-search h2 {
 	margin: 0;
-	margin-bottom: 27px;
+	margin-bottom: 24px;
 	font-size: 30px;
 	line-height: 36px;
 }
@@ -268,14 +320,16 @@ ul.site-nav li:nth-of-type(4) {
 	margin: 0;
 	padding-left: 382px;
 	padding-right: 383px;
-	margin-bottom: 53px;
+	margin-bottom: 47px;
 	font-size: 14px;
 	line-height: 24px;
 }
 
 .hotel-search a {
+	display: inline-block;
 	font-size: 21px;
 	line-height: 26px;
+	padding: 30px 138px;
 	background-color: #766357;
 	color: #ffffff;
 }
@@ -288,11 +342,19 @@ ul.site-nav li:nth-of-type(4) {
 	background-color: #503e33;
 }
 
-.map-image {
-	margin: 0;
+.map-img {
+	width: 1200px;
+	height: 593px;
+	background-image: url("../img/map2.jpg");
+	bottom: 0;
 }
 
 .form-search {
+	position: absolute;
+	width: 568px;
+	height: 395px;
+	padding: 53px 55px;
+	border: 1px solid black;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
@@ -300,7 +362,26 @@ ul.site-nav li:nth-of-type(4) {
 	background-color: #ffffff;
 }
 
+.form-search div {
+	margin-bottom: 50px;
+}
+
+.form-search .adults-children-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.form-search .adults-children-container input {
+	width: 38px;
+}
+
 .form-search input {
+	box-sizing: border-box;
+	width: 346px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
 }
@@ -316,6 +397,12 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .form-search .button {
+	display: inline-block;
+	width: 458px;
+	padding-right: 196px;
+	padding-left: 196px;
+	padding-top: 17px;
+	padding-bottom: 17px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -334,10 +421,23 @@ ul.site-nav li:nth-of-type(4) {
 }
 
 .main-footer {
+	position: absolute;
+	width: 1200px;
+	height: 120px;
+	bottom: 0px;
+	background-color: rgba(255, 255, 255, 0.9);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+
+.main-footer span {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
 .main-footer a {
 	font-size: 21px;
 	line-height: 26px;
@@ -345,10 +445,65 @@ ul.site-nav li:nth-of-type(4) {
 	color: #000000;
 }
 
-.copyright p {
+
+.social-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
+}
+
+.social-btn:active path {
+	fill: #88b6d1;
+}
+
+.social-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 197px;
+}
+
+.copyright span {
 	font-size: 14px;
 	line-height: 26px;
-	color: #000000;
+	font-weight: normal;
+}
+
+.logo-img:hover path,
+.logo-img:hover rect {
+	fill: #81b3d2;
+}
+
+.logo-img:active path,
+.logo-img:active rect {
+	fill: #bdbbbc;
+}
+
+.catalog-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+		width: 1200px;
+	height: 120px;
 }
 
 .filters {
@@ -364,11 +519,6 @@ ul.site-nav li:nth-of-type(4) {
 	display: flex;
 }
 
-.form-price{
-	margin-left: auto;
-	padding-right: 60px;
-}
-
 .infrastructure-house {
 	width: 236px;
 	margin: 0;
@@ -380,6 +530,27 @@ ul.site-nav li:nth-of-type(4) {
 .infrastructure-list {
 	margin: 0;
 	padding: 0;
+}
+
+.filter-option {
+	position: relative;
+}
+
+.filter-option::before {
+	position: absolute;
+	content: "";
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-on.svg");
+	left: -35px;
+}
+
+.filter-option:hover::before {
+	content: "";
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-off.svg");
+	left: -30px;
 }
 
 .house-list {
@@ -401,46 +572,118 @@ ul.site-nav li:nth-of-type(4) {
 	line-height: 21px;
 }
 
-.form-price p{
-	margin-bottom: 0;
-}
-
-.button-filter {
-	margin-top: 20px;
-	margin-left: 120px;
-}
-
-.form-price .min-max {
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-}
-
-.min-max input {
-	background-color: transparent;
+.form-price {
+	width: 330px;
+	color: #ffffff;
 	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 21px;
-	color:#ffffff;
-
 }
 
 .form-price p {
-	font-size: 16px;
-	line-height: 21px;
-	font-weight: 700;
-	color: #ffffff;
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
 
+.min-max {
+	position: relative;
+	height: 36px;
+	margin-bottom: 20px;
+	font-size: 0;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.min-max::after {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.min-max label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.min-max .min-price,
+.min-max .max-price {
+	width: 90px;
+	padding-left: 65px;
+}
+
+.min-max input {
+	width: 50px;
+ 	margin: 0;
+	color: inherit;
+  	font: inherit;
+	background: none;
+ 	border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: -9px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }
 
 .button-filter {
-	align-self: flex-end;
-	background-color: transparent;
-	text-transform: uppercase;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-	font-size: 14px;
-	line-height: 26px;
-	color:#ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .button-filter:hover {
@@ -469,6 +712,14 @@ ul.site-nav li:nth-of-type(4) {
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
+}
+
+.options-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 270px;
 }
 
 .options-list a {
