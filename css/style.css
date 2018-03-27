@@ -1,25 +1,22 @@
 body {
-	position: relative;
-	width: 1200px;
-	margin: 0 auto;
-	padding: 0;
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	color: #000000;
-	text-transform: uppercase;
-	background-color: #f2f2f2;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	box-shadow: 0px 5px 15px 5px rgba(0, 1, 1, 0.2)
-
+  box-shadow: 0px 5px 15px 5px rgba(0, 1, 1, 0.2)
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .site-nav,
@@ -30,101 +27,96 @@ a {
 .house-list,
 .options-list,
 .hotels-list {
-	list-style: none;
+  list-style: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .button {
-	border: none;
+  border: none;
 }
 
 .main-nav {
-	position: relative;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
-	background-color: #ffffff;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #ffffff;
 }
 
 .main-header-logo {
-	position: absolute;
-	left: 531px;
+  position: absolute;
+  left: 531px;
 }
 
 .site-nav {
-	display: flex;
-	justify-content: space-around;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav li {
-	width: 300px;
-	padding-top: 14px;
-	padding-bottom: 16px;
+  width: 300px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 ul.site-nav li:nth-of-type(1) {
-	box-sizing: border-box;
-	padding-left: 72px;
+  box-sizing: border-box;
+  padding-left: 72px;
 }
+
 ul.site-nav li:nth-of-type(2) {
-	box-sizing: border-box;
-	padding-left: 13px;
+  box-sizing: border-box;
+  padding-left: 13px;
 }
 
 ul.site-nav li:nth-of-type(3) {
-	box-sizing: border-box;
-	text-align: right;
-	padding-right: 17px;
+  box-sizing: border-box;
+  padding-right: 17px; 
+  text-align: right;
 }
 
 ul.site-nav li:nth-of-type(4) {
-	box-sizing: border-box;
-	text-align: right;
-	padding-right: 72px;
+  box-sizing: border-box;
+  padding-right: 72px;
+  text-align: right;
 }
 
 .site-nav a {
-	color: #000000;
+  color: #000000;
 }
 
 .site-nav a:hover {
-	color: #81b3d2;
+  color: #81b3d2;
 }
 
 .site-nav a:active {
-	color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-nav a.main-active {
-	color: #766357;
+  color: #766357;
 }
 
 .main-img{
-	width: 1200px;
-	height: 508px;
-	background: url("../img/welcome.png") no-repeat 50% 76px,
-				url("../img/white-background.png") no-repeat 0 100%,
-				url("../img/background-photo-1.jpg") no-repeat;	
-	background-color: #dbe9f2;	
+  width: 1200px;
+  height: 508px;
+  background: url("../img/welcome.png") no-repeat 50% 76px,
+              url("../img/white-background.png") no-repeat 0 100%,
+              url("../img/background-photo-1.jpg") no-repeat;	
+  background-color: #dbe9f2;	
 }
 
 .main-description {
@@ -762,7 +754,7 @@ span.calendar:active path {
 
 .form-price p {
 	margin: 0;
-  margin-bottom: 9px;
+	margin-bottom: 9px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
