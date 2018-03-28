@@ -235,8 +235,8 @@ ul.site-nav li:nth-of-type(4) {
   height: 72px;
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
-  bottom: 117px;
-  right: 162px;
+  top: -101px;
+  right: 163px;
 }
 
 .service-item:nth-of-type(2)::before{
@@ -246,7 +246,7 @@ ul.site-nav li:nth-of-type(4) {
   height: 70px;
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
-  bottom: 118px;
+  top: -100px;
   right: 165px;
 }
 
@@ -257,7 +257,7 @@ ul.site-nav li:nth-of-type(4) {
   height: 76px;
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  bottom: 117px;
+  top: -105px;
   right: 169px;
 }
 
