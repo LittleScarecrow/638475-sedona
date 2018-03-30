@@ -375,15 +375,9 @@ ul.site-nav li:nth-of-type(4) {
   background-color: #503e33;
 }
 
-.map-img {
-  width: 1200px;
-  height: 593px;
-  background-image: url("../img/map2.jpg");
-  bottom: 0;
-}
-
 .form-search {
   position: absolute;
+  display: none;
   top: -473px;
   left: 315px;
   width: 459px;
@@ -395,6 +389,29 @@ ul.site-nav li:nth-of-type(4) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
+}
+
+.form-on {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+}
+
+  70% {
+    transform: translateY(30px);
+}
+
+  90% {
+    transform: translateY(-10px);
+}
+
+  100% {
+    transform: translateY(0);
+}
 }
 
 .form-search label {
@@ -417,6 +434,7 @@ label.departure {
 
 label.adults {
   margin-right: 37px;
+  margin-top: -10px;
 }
 
 label.children {
@@ -467,17 +485,17 @@ input[name^="date"] {
 button.calendar {
   position: absolute;
   display: block;
-  width: 21px;
-  height: 22px;
-  bottom: 9px;
-  left: 422px;
+  width: 25px;
+  height: 27px;
+  bottom: 5px;
+  left: 425px;
+  padding-left: 2px;
   border: none;
   background-color: transparent;
 }
 
 button.calendar:hover path {
   fill: #000000;
-
 }
 
 button.calendar:active path {
@@ -492,71 +510,13 @@ button.calendar:active path {
   margin-bottom: 53px;
 }
 
-
 .adults-children:first-of-type input:first-of-type {
-  margin-right: 53px;
 }
 
 .adults-children input {
-  width: 115px;
-  padding-left: 53px;
-}
-
-.minus,
-.plus {
-  position: absolute;
-  border: none;
-  background-color: transparent;
-  color: #a9a9a9;
-}
-
-.minus {
   width: 38px;
   height: 38px;
-  font-size: 42px;
-  color: #a9a9a9;
-}
-
-.minus-adults {
-  bottom: 8px;
-  left: 114px;
-}
-
-.minus-children {
-  bottom: 8px;
-  left: 345px;
-}
-.plus {
-  font-size: 23px;
-  font-weight: 700;
-  width: 38px;
-  height: 38px;
-}
-
-.plus-adults {
-  bottom: 0px;
-  left: 189px;
-}
-
-.plus-children {
-  bottom: 0px;
-  left: 422px;
-}
-
-.plus:hover {
-  color: #000000;
-}
-
-.plus:active {
-  color: #81b3d2;
-}
-
-.minus:hover {
-  color: #000000;
-}
-
-.minus:active {
-  color: #81b3d2;
+  padding-right: 0px;
 }
 
 .form-search input:hover {
@@ -567,6 +527,135 @@ button.calendar:active path {
 .form-search input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+}
+
+.plus,
+.minus {
+  display: inline-block;
+  vertical-align: bottom;
+  border: none;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  color: #a9a9a9;
+}
+
+button.minus-adults {
+  position: relative; 
+  margin-right: -4px;
+}
+
+button.minus-adults::before {
+  position: absolute;
+  content: "";
+  bottom: 17px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+button.minus-adults:hover::before {
+  background-color: #000000;
+}
+
+button.minus-adults:active::before {
+  background-color: #81b3d2;
+}
+
+button.plus-adults {
+  position: relative; 
+  margin-left: -4px;
+  margin-right: 54px;
+}
+
+button.plus-adults::before {
+  position: absolute;
+  content: "";
+  bottom: 17px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+button.plus-adults::after {
+  position: absolute;
+  content: "";
+  bottom: 13px;
+  left: 17px;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+}
+
+button.plus-adults:hover::before,
+button.plus-adults:hover::after {
+  background-color: #000000;
+}
+
+button.plus-adults:active::before,
+button.plus-adults:active::after {
+  background-color: #81b3d2;
+}
+
+button.minus-children {
+  position: relative;
+  margin-right: -4px;
+}
+
+button.minus-children::before {
+  position: absolute;
+  content: "";
+  bottom: 17px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+button.minus-children:hover::before {
+  background-color: #000000;
+}
+
+button.minus-children:active::before {
+  background-color: #81b3d2;
+}
+
+button.plus-children {
+  position: relative;
+  margin-left: -4px;
+}
+
+button.plus-children::before {
+  position: absolute;
+  content: "";
+  bottom: 17px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+button.plus-children::after {
+  position: absolute;
+  content: "";
+  bottom: 13px;
+  left: 17px;
+  width: 3px;
+  height: 11px;
+  background-color: #a9a9a9;
+}
+
+button.plus-children:hover::before,
+button.plus-children:hover::after {
+  background-color: #000000;
+}
+
+button.plus-children:active::before,
+button.plus-children:active::after {
+  background-color: #81b3d2;
 }
 
 .form-search .button {
@@ -598,7 +687,7 @@ button.calendar:active path {
   position: absolute;
   width: 1200px;
   height: 120px;
-  bottom: 0px;
+  bottom: 3px;
   background-color: rgba(255, 255, 255, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
