@@ -372,7 +372,7 @@ ul.site-nav li:nth-of-type(4) {
 
 .form-search {
     position: absolute;
-    display: block;
+    display: none;
     top: -473px;
     left: 315px;
     width: 459px;
@@ -381,11 +381,11 @@ ul.site-nav li:nth-of-type(4) {
     background-color: #fff;
     -webkit-box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
     box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
-    animation: bounce .6s;
 }
 
-.form-off {
-    display: none;
+.form-on {
+    display: block;
+    animation: bounce .7s;
 }
 
 .form-search label {
@@ -630,6 +630,7 @@ iframe {
     width: 1200px;
     height: 590px;
     background-image: url(../img/map2.jpg);
+    border: 0;
 }
 
 .main-footer {
