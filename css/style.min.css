@@ -266,16 +266,8 @@ ul.site-nav li:nth-of-type(4) {
     right: 169px
 }
 
-.service-list li:first-of-type p:first-of-type {
-    padding: 0 73px
-}
-
-.service-list li:nth-of-type(2) p {
+.service-list p {
     padding: 0 50px
-}
-
-.service-list li:nth-of-type(3) p {
-    padding: 0 64px
 }
 
 .service-item h2 {
@@ -1066,10 +1058,10 @@ iframe {
     border-bottom: 1px solid #e5e5e5
 }
 
-.hotels-list li img {
+.hotels-type img {
     width: 135px;
     height: 90px;
-    margin-right: 30px
+    margin-right: 30px;
 }
 
 .name-and-price {
@@ -1197,11 +1189,21 @@ a.hotels-book:active {
 }
 
 .stars-3::before {
+    position: absolute;
+    content: "";
+    background: url(../img/star.svg) repeat-x;
     width: 70px;
-    left: 43px
+    height: 17px;
+    bottom: 74px;
+    left: 43px;
 }
 
 .stars-2::before {
+    position: absolute;
+    content: "";
+    background: url(../img/star.svg) repeat-x;
     width: 47px;
-    left: 66px
+    height: 17px;
+    bottom: 74px;
+    left: 66px;
 }
